@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Only For You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-links">
+            <a href="https://t.me/M_PLAYEER">OUR CHANNEL</a>
+            <a href="https://t.me/Humbleseeker7">MY ACCOUNT</a>
+        </nav>
+        <nav class="media-nav">
+            <select name="" id="">
+                <option value=""><a href="https://t.me/M_PLAYEER">OUR CHANNEL</a></option>
+                <option value=""><a href="https://t.me/Humbleseeker7">MY ACCOUNT</a></option>
+            </select>
+        </nav>
+        <div class="logo">
+           <h3 class="logo-h3"> MUSIC PLAYER <span>ONLY</span> FOR YOU</h3>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="playlist-section">
+            <input type="text" id="searchBar" placeholder="Qo'shiq qidirish...">
+            <div id="playlist" class="playlist">
+                </div>
+        </section>
+
+      <div class="box-sect">
+         <div class="box">
+                    <h3 class="option-h3">Text</h3>
+                   <select id="langSelect">
+                        <option value="asl">Original</option>
+                        <option value="uzb">Uzbek</option>
+                    </select>
+            </div>
+          <section class="lyrics-section">
+          
+        
+            <div id="lyricsContent" class="lyrics-content">
+                Musiqani tanlang...
+            </div>
+        </section>
+      </div>
+
+        <section class="player-section">
+            <div class="button1">
+                <button class="showplay">Playlist</button>
+                <button class="showtext">Text</button>
+            </div>
+            <div class="disk">
+                <img class="disk" src="https://cdn-icons-png.flaticon.com/512/26/26441.png" id="cover" alt="cover">
+            </div>
+            <h2 id="songName">Noma'lum</h2>
+            <p id="songTitle">Noma'lum ijrochi</p>
+
+            <div class="controls-box">
+                  <span id="currentTime">00:00</span>
+                <input type="range" id="timeBar" value="0" min="0" step="1">
+                  <span id="durationTime">00:00</span>
+                <!-- <div class="time-info">
+                    <span id="currentTime">00:00</span>
+                    <span id="durationTime">00:00</span>
+                </div> -->
+
+                <div class="buttons">
+                    <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+                    <button id="playBtn">Play</button>
+                    <button id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+                <div class="extra-controls">
+                  
+                    <input type="range" id="volumeBar" value="80" max="100">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <audio id="mainAudio"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
