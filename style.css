@@ -231,6 +231,7 @@ span {
     gap: 20px;
     /* width: 60%; */
     padding-left: 5rem;
+    padding-top: 15px;
 }
 .showplay {
     display: none;
@@ -250,6 +251,9 @@ span {
     padding: 5px 10px 5px 10px;
     border-radius: 8px;
     display: none;
+}
+.disk {
+    margin-top: 20px;
 }
 @media ( max-width : 739px ) {
     .container {
@@ -311,6 +315,10 @@ span {
         display: flex;
         flex-direction: column;
     }
+     .disk {
+        width: 160px;
+        height: 160px;
+    }
 
 
 
@@ -319,6 +327,10 @@ span {
     .player-section {
       margin: 0 50px 0 50px;
       min-width: 300px;
+    }
+    .disk {
+        width: 160px;
+        height: 160px;
     }
 
 }
