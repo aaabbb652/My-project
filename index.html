@@ -10,6 +10,9 @@
 <body>
 
     <header>
+        <div class="logo">
+            <h3 class="logo-h3"> MUSIC PLAYER <span>ONLY</span> FOR YOU</h3>
+        </div>
         <nav class="nav-links">
             <a href="https://t.me/M_PLAYEER">OUR CHANNEL</a>
             <a href="https://t.me/Humbleseeker7">MY ACCOUNT</a>
@@ -20,14 +23,12 @@
                 <option value=""><a href="https://t.me/Humbleseeker7">MY ACCOUNT</a></option>
             </select>
         </nav>
-        <div class="logo">
-           <h3 class="logo-h3"> MUSIC PLAYER <span>ONLY</span> FOR YOU</h3>
-        </div>
     </header>
 
     <main class="container">
         <section class="playlist-section">
             <input type="text" id="searchBar" placeholder="Qo'shiq qidirish...">
+            <button id="back">Back</button>
             <div id="playlist" class="playlist">
                 </div>
         </section>
@@ -39,6 +40,7 @@
                         <option value="asl">Original</option>
                         <option value="uzb">Uzbek</option>
                     </select>
+                    <button class="show-player">Player</button>
             </div>
           <section class="lyrics-section">
           
@@ -54,20 +56,20 @@
                 <button class="showplay">Playlist</button>
                 <button class="showtext">Text</button>
             </div>
+           
             <div class="disk">
                 <img class="disk" src="https://cdn-icons-png.flaticon.com/512/26/26441.png" id="cover" alt="cover">
+                
             </div>
             <h2 id="songName">Noma'lum</h2>
             <p id="songTitle">Noma'lum ijrochi</p>
+
 
             <div class="controls-box">
                   <span id="currentTime">00:00</span>
                 <input type="range" id="timeBar" value="0" min="0" step="1">
                   <span id="durationTime">00:00</span>
-                <!-- <div class="time-info">
-                    <span id="currentTime">00:00</span>
-                    <span id="durationTime">00:00</span>
-                </div> -->
+              
 
                 <div class="buttons">
                     <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
