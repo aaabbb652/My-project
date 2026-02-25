@@ -68,8 +68,8 @@ section {
 .playlist-item:hover { background: white; }
 
 .lyrics-content {
-    text-align: center;
-    font-size: 1.2rem;
+    /* text-align: center; */
+    /* font-size: 1.2rem; */
     line-height: 2;
     color: #333;
 }
@@ -80,6 +80,29 @@ section {
     font-size: 1.4rem;
    
     text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* --- Lyrics animatsiyasi uchun soddaroq CSS --- */
+.lyrics-content {
+    transition: transform 0.5s ease; /* Matn silliq siljishi uchun */
+    text-align: center;
+    width: 90%;
+    padding-top: 200px; /* Birinchi qator markazda turishi uchun */
+    padding-bottom: 200px;
+}
+
+.lyrics-content p {
+    opacity: 0.3; /* Oddiy holatda xira bo‘ladi */
+    transition: all 0.5s ease; /* Rang va kattalashish silliq bo‘lsin */
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.lyrics-content p.active-lyric {
+    opacity: 1;
+    transform: scale(1.2); /* Aytilayotgan qator kattalashadi */
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 .player-section { text-align: center;
